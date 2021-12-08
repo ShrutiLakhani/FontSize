@@ -9,10 +9,12 @@ btnDec.addEventListener("click", decreaseFont);
 var size = 16;
 function increaseFont()
 {
-size +=2;
+size = size + 2;
 var outtext = textInp.value;
-outputVal.style.fontsize = `{size}px`;
+outputVal.style.fontsize = `${size}px`;
+console.log(outputVal.style.fontsize);
 outputVal.textContent = outtext;
+console.log(outputVal.textContent);
 }
 
 function decreaseFont()
@@ -20,6 +22,6 @@ function decreaseFont()
 console.log("comes here")
 size -=2;
 var outtext = textInp.value;
-outputVal.style.fontsize = `{size}px`;
+outputVal.style.fontsize = `${size}px`;
 outputVal.textContent = outtext;
 }
